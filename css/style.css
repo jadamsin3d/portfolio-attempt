@@ -1,0 +1,265 @@
+body {
+    background-image: url("../Art/zwartevilt.png");
+    background-repeat: repeat;
+}
+
+.sidenav1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 100px;
+    border-right: #f1f1f1 solid 3px;
+}
+
+.sidenav1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 38px;
+    color: #888;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Libre Barcode 39 text', cursive;
+    margin-bottom: 30px;
+}
+
+.sidenav1 a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav1 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#maincontent {
+    transition: margin-left .3s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-family: 'Libre Barcode 39 text', cursive;
+    margin: 10px;
+    color:  #f1f1f1;
+    font-size:50px;
+    z-index: 1;
+}
+
+.jesseBio p {
+    margin: 20px 10px;
+}
+
+.jesseBio {
+    width: 60%;
+    margin: 80px auto 0px;
+    font-size: 18px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color:white;
+}
+
+#jesseImg {
+    width: 30%;
+    margin: 10px;
+    margin-left: 5px;
+    border: 1px solid black;
+    float: left;
+}
+
+.newheader1 {
+    font-family: 'Libre Barcode 39 text', cursive;
+    font-size: 56px;
+    margin: 10px;
+}
+
+.jesseHdr {
+    font-family: 'Libre Barcode 39 text', cursive;
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: -55px;
+    text-align: center;
+    font-size: 100px;
+    padding: 10px;
+}
+
+.footer {
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 0px 15px;
+}
+
+.contactForm p {
+    margin: 10px 0px; 
+    margin-top: 30px;
+}
+
+.regFields {
+    width: 700px;
+
+}
+
+#contactTextArea {
+    width:700px;
+    height: 150px;
+}
+
+#submitbtn {
+   width: 100px;
+   height: 45px;
+   margin: 10px 0px;
+   background-color: #111111;
+   border: 4px solid #888;
+   color: #888;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+#submitbtn:hover {
+    border-color: #f1f1f1;
+    color: #f1f1f1
+}
+
+#submitbtn:active {
+    border-color: #f1f1f1;
+    color: #f1f1f1
+}
+
+.portItem img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    
+}
+
+.itemDes {
+    width: 300px;
+    background-color: #111;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: -250px;
+    border-top: 5px darkred solid;
+    border-bottom: 5px darkred solid;
+}
+
+.itemDes h3 {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.imagegrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portItem {
+    margin-right: 50px;
+}
+
+.portItem a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+#portID {
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 980px) {
+    .jesseHdr {font-size: 56px;
+                width: 100%; }
+    .imagegrid {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .imagegrid2 {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .portItem img {width: 350px;
+                    height: 350px;}
+    .itemDes {width: 350px;
+            top: -180px;
+            font-size: 20px;
+            }
+    .regFields {width: 500px;
+                height: 20px;}
+    #contactTextArea {width:500px;
+                    height: 150px;}
+    .openbtn {font-size: 30px;}
+    .newheader1 {font-size: 46px;
+                margin-bottom: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+    .jesseHdr {font-size: 56px;
+                width: 100%; }
+    .imagegrid {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .imagegrid2 {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .portItem img {width: 350px;
+                    height: 350px;}
+    .itemDes {width: 350px;
+            top: -180px;
+            font-size: 20px;
+            }
+    .regFields {width: 500px;
+                height: 20px;}
+    #contactTextArea {width:500px;
+                    height: 150px;}
+    .openbtn {font-size: 30px;}
+    .newheader1 {font-size: 46px;
+                margin-bottom: 18px;}
+}
+
+@media screen and (max-width: 640px) {
+    .jesseHdr {font-size: 40px;
+                width: 40%; }
+    .imagegrid {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .imagegrid2 {display: flex;
+                flex-direction:row;
+                flex-wrap: wrap; }
+    .portItem img {width: 350px;
+                    height: 350px;}
+    .itemDes {width: 350px;
+            top: -180px;
+            font-size: 20px;
+            }
+    .regFields {width: 250px;
+                height: 15px;}
+    #contactTextArea {width:250px;
+                    height: 150px;}
+    .contactForm {font-size: 14px;}
+    .openbtn {font-size: 30px;}
+    .newheader1 {font-size: 36px;
+                margin-bottom: 12px;}
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
