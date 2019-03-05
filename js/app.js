@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("mySideNav").style.width = "250px";
-    document.getElementById("maincontent").style.marginLeft = "250px";
+    document.getElementById("mySideNav").style.width = "280px";
+    document.getElementById("maincontent").style.marginLeft = "280px";
 }
 
 function closeNav() {
-    document.getElementById("mySideNav").style.width = "0";
-    document.getElementById("maincontent").style.marginLeft = "0";
+    document.getElementById("mySideNav").style.width = "0px";
+    document.getElementById("maincontent").style.marginLeft = "0px";
 }
