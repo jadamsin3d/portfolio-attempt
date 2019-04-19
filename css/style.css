@@ -1,105 +1,206 @@
 body {
-    background-image: url("../Art/zwartevilt.png");
-    background-repeat: repeat;
+  background-image: url("../Art/zwartevilt.png");
+  background-repeat: repeat;
 }
 
 .sidenav1 {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 100px;
-    border-right: #f1f1f1 solid 5px;
-    padding-right: 0px;
-    margin-right: 0px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 100px;
+  border-right: #f1f1f1 solid 5px;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .sidenav1 a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 38px;
-    color: #888;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Libre Barcode 39 text', cursive;
-    margin-bottom: 30px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 38px;
+  color: #888;
+  display: block;
+  transition: 0.3s;
+  font-family: "Libre Barcode 39 text", cursive;
+  margin-bottom: 30px;
 }
 
 .sidenav1 a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav1 .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 #maincontent {
-    transition: margin-left .3s;
-    padding: 16px;
-    margin: auto;
+  transition: margin-left 0.3s;
+  padding: 16px;
+  margin: auto;
+}
+  
+.openbtn {
+  cursor: pointer;
+  font-family: "Libre Barcode 39 text", cursive;
+  margin: 10px;
+  color: #f1f1f1;
+  font-size: 50px;
+  z-index: 1;
 }
 
-.openbtn {
-    font-family: 'Libre Barcode 39 text', cursive;
-    margin: 10px;
-    color:  #f1f1f1;
-    font-size:50px;
-    z-index: 1;
+#maincontent span:hover {
+  text-shadow: 0px 0px 6px #f1f1f1;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 
 .jesseHdr {
-    position: relative;
-    width: 50%;
-    margin: 0px 40%;
-    top: -60px;
-    font-family: 'Libre Barcode 39 text', cursive;
+  position: relative;
+  width: 50%;
+  margin: 0px 40%;
+  top: -60px;
+  font-family: "Libre Barcode 39 text", cursive;
 }
 
 .nameHdr {
-    font-size: 80px;
-    color: #f1f1f1;
+  font-size: 80px;
+  color: #f1f1f1;
 }
 
 .jesseBio {
-    width: 60%;
-    margin: 80px auto 0px;
-    font-size: 15px;
-    font-family: 'Encode Sans Condensed', sans-serif;
-    color:white;
+  width: 60%;
+  margin: 80px auto 0px;
+  font-size: 15px;
+  font-family: "Encode Sans Condensed", sans-serif;
+  color: white;
 }
 
 .contentHdr {
-    font-family: 'Libre Barcode 39 text', cursive;
-    font-size: 56px;
-    margin: 10px;
+  font-family: "Libre Barcode 39 text", cursive;
+  font-size: 56px;
+  margin: 10px;
+  margin-bottom: 30px;
 }
 
 #jesseImg {
-    width: 30%;
-    margin: 10px;
-    margin-left: 5px;
-    border: 1px solid black;
-    float: left;
+  width: 30%;
+  margin: 10px;
+  margin-left: 5px;
+  border: 1px solid black;
+  float: left;
 }
 
 .footer {
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-    font-size: 30px;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .footer a {
-    text-decoration: none;
-    color: #f1f1f1;
-    margin: 0px 15px;
+  text-decoration: none;
+  color: #f1f1f1;
+  margin: 0px 15px;
+}
+
+.regFields {
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+#contactTextArea {
+  width: 75%;
+  height: 200px;
+}
+
+.contactForm p {
+  margin-bottom: 5px;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.contactForm [type="submit"] {
+  background-color: #111;
+  width: 100px;
+  height: 40px;
+  border: #f1f1f1 3px solid;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.contactForm input[type="submit"]:hover {
+  text-shadow: 0px 0px 6px #f1f1f1;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.gitlinks :hover {
+  text-shadow: 0px 0px 6px #f1f1f1;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.linkedlinks :hover {
+  text-shadow: 0px 0px 6px #f1f1f1;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.newheader1 {
+  margin: auto;
+  width: 75%;
+  font-family: "Libre Barcode 39 text", cursive;
+  margin-bottom: 30px;
+  font-size: 56px;
+}
+
+.imagegrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 75%;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.imagegrid > .portItem > img {
+  width: 400px;
+  height: 400px;
+}
+
+.imagegrid > div {
+  flex: 1 1 150px;
+}
+
+.itemDes {
+  width: 400px;
+  text-decoration: none;
+  background-color: #777777;
+}
+
+.itemDes :hover {
+  text-decoration: none;
+}
+
+.itemDes h3 {
+  text-decoration: none;
+}
+
+.itemDes p {
+  text-decoration: none;
 }
