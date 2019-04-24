@@ -42,6 +42,10 @@ body {
   margin-left: 50px;
 }
 
+.altsidenav {
+  visibility: hidden;
+}
+
 #maincontent {
   transition: margin-left 0.3s;
   padding: 16px;
@@ -55,6 +59,19 @@ body {
   color: #f1f1f1;
   font-size: 50px;
   z-index: 1;
+}
+
+.openaltbtn {
+  position: relative;
+  cursor: pointer;
+  font-family: "Libre Barcode 39 text", cursive;
+  margin: 10px;
+  color: #f1f1f1;
+  font-size: 50px;
+  z-index: 1;
+  float: right;
+  bottom: 85px;
+  visibility: hidden;
 }
 
 #maincontent span:hover {
@@ -208,4 +225,65 @@ body {
   text-decoration: none;
   color: #f1f1f1;
   text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .openbtn {
+    visibility: hidden;
+  }
+
+  .openaltbtn {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .nameHdr {
+    font-size: 70px;
+    width: 100%;
+    position: relative;
+    left: -140px
+  }
+
+  .jesseBio {
+    width: 80%
+  }
+
+  #jesseImg {
+    width: 40%;
+  }
+
+  .gitlinks {
+    font-size: 56px; 
+  }
+
+  .linkedlinks {
+    font-size: 56px;
+  }
+
+  .imagegrid > .portItem > img {
+    width: 450px;
+    height: 450px;
+    border-radius: 7px;
+  }
+  
+  .imagegrid > div {
+    position: relative;
+    flex: 1 1 150px;
+  }
+
+  .itemDes {
+    width: 450px;
+    height: 125px;
+    bottom: 350px;
+  }
+
+  .portItem {
+    margin-right: 100px;
+    left: -100px;
+    margin-bottom: -20px;
+  }
+
+  #portID {
+    margin-bottom: 40px;
+  }
 }
