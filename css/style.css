@@ -44,7 +44,28 @@ body {
 
 .altsidenav {
   visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.3ms;
+  border-bottom: #f1f1f1 solid 5px;
 }
+
+.altsidenav a {
+  text-decoration: none;
+  color: #888;
+  display: block;
+  transition: 0.3s;
+  font-family: "Libre Barcode 39 text", cursive;
+}
+
+.altsidenav a:hover {
+  color: #f1f1f1;
+}
+
+
 
 #maincontent {
   transition: margin-left 0.3s;
