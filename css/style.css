@@ -46,26 +46,28 @@ body {
   visibility: hidden;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: -400px;
   left: 0;
+  width: 100%;
   background-color: #111;
-  transition: 0.3ms;
+  transition: -50.5ms;
   border-bottom: #f1f1f1 solid 5px;
+  overflow-y: hidden;
 }
 
 .altsidenav a {
   text-decoration: none;
   color: #888;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
   font-family: "Libre Barcode 39 text", cursive;
+  font-size: 60px;
+  text-align: center;
 }
 
 .altsidenav a:hover {
   color: #f1f1f1;
 }
-
-
 
 #maincontent {
   transition: margin-left 0.3s;
@@ -83,7 +85,7 @@ body {
 }
 
 .openaltbtn {
-  position: relative;
+  position: inherit;
   cursor: pointer;
   font-family: "Libre Barcode 39 text", cursive;
   margin: 10px;
@@ -91,7 +93,7 @@ body {
   font-size: 50px;
   z-index: 1;
   float: right;
-  bottom: 85px;
+  bottom: 80px;
   visibility: hidden;
 }
 
@@ -307,4 +309,17 @@ body {
   #portID {
     margin-bottom: 40px;
   }
+
+  .altsidenav {
+    visibility: visible;
+  }
+
+  .altsidenav a {
+    visibility: visible;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  
 }
